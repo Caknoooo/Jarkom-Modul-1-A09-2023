@@ -55,15 +55,35 @@ dibawah nilai pada soal sebelumnya untuk response dari aktivitas STOR.
 ### Soal 2
 > Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
+Untuk melihat server yang digunakan pada portal praktikum Jaringan Komputer dapat kita lihat pada salah satu protokol paket yang terekam didalam soal2.pcapng. Disini kami menggunakan salah satu paket dengan protokol TCP. Setelah itu kita perlu klik kanan pada paket tersebut, lalu pilih follow, dan memilih “TCP Stream”. Selanjutny akan muncul salah satu request yang telah berjalan dengan contoh dibawah ini dan dapat kita lihat pada detail server. Detailnya dapat dilihat dibawah ini
+
+![2A1](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/b476b68e-3ba2-4933-9e96-8e48fcd3f0fa)
+
+![2A2](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/2224edc9-f110-4d3a-9045-b53419e88a6f)
+
 ### Soal 3
 > Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
 
 A. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
 
+Untuk menghitung banyak paket yang tercapture pada IP source maupun destination address 239.22.22.250 dengan port 3702 dapat menggunakan kueri filter ‘ip.dst’ untuk address dan ‘udp.port’ untuk port yang diinginkan. Pada kasus ini kita perlu memasukkan kueri “ip.dst == 239.255.255.250 && udp.port == 3702”, maka akan keluar semua paket dengan kueri tersebut dan apabila dihitung total akan ada 21 paket
+
+![3A](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/15216841-1520-461d-8638-f6ce7127c6ed)
+
 B. Protokol layer transport apa yang digunakan?
+
+Pada pertanyaan ini, protokol yang digunakan ialah UDP karena didapatkan dari hasil sebelumnya.
+
+![3B](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/68a1b350-e179-4534-b048-cbec16bcf39f)
 
 ### Soal 4
 > Berapa nilai checksum yang didapat dari header pada paket nomor 130?
+
+Pada soal ini, kita perlu mencari paket yang didapatkan ke-130, lalu pada bagian “User Datagram Protocol” (kiri bawah) kita expand dan bisa kita dapatkan nilai checksum 0x18e5
+
+![4.1](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/28e98de4-ebac-41c1-84cb-0cb5491f664f)
+
+![4.2](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/ad579f01-935b-4f9a-959f-98d72ee04db2)
 
 ### Soal 5
 > Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
