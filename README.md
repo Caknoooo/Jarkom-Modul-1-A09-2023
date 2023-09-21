@@ -8,16 +8,16 @@
 |M. Naufal Badruttamam | 5025211240 | https://github.com/Caknoooo |
 
 ### List Soal
-- [Soal 1](Soal-1)
-- [Soal 2](Soal-2)
-- [Soal 3](Soal-3)
-- [Soal 4](Soal-4)
-- [Soal 5](Soal-5)
-- [Soal 6](Soal-6)
-- [Soal 7](Soal-7)
-- [Soal 8](Soal-8)
-- [Soal 9](Soal-9)
-- [Soal 10](Soal-10)
+- [Soal 1](#Soal-1)
+- [Soal 2](#Soal-2)
+- [Soal 3](#Soal-3)
+- [Soal 4](#Soal-4)
+- [Soal 5](#Soal-5)
+- [Soal 6](#Soal-6)
+- [Soal 7](#Soal-7)
+- [Soal 8](#Soal-8)
+- [Soal 9](#Soal-9)
+- [Soal 10](#Soal-10)
 
 ### Soal 1
 **User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.**
