@@ -22,13 +22,35 @@
 ### Soal 1
 > User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
 
-A. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+Pada soal ini, untuk mengetahui aktivitas yang dilakukan oleh user dapat kita lihat pada clue yang diberikan yaitu “mengunggah suatu file”. Mengunggah suatu file identik dengan perilaku STORE pada komputer sehingga kita dapat mencari paket dengan info STOR dan didapatkan request dan response yang relevan dengan informasi tersebut yaitu pada paket no 147 dan 149.
 
-B. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+> A. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 
-C. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+Pada pertanyaan ini kita diminta untuk mencari sequence number (raw) dari request STOR. Kita bisa dapatkan nilai ini dengan membuka “Transmission Control Protocol” pada paket tersebut dan bisa kita temukan nilainya disana.
 
-D. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+![1A1](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/4a63dfff-7d49-4df5-9a8b-2ee0ebb04050)
+
+![1A2](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/5f9ab2b7-1bc0-4620-97dc-ba254ac14b78)
+
+> B. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut?
+
+Selanjutnya pada pertanyaan ini, di section yang sama dapat kita temukan nilai 
+“Acknowledgment number (raw)” dibawah nilai pada pertanyaan sebelumnya.
+
+![1B](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/66485acb-ec4b-4666-a846-ed3332695b2d)
+
+> C. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+Pada pertanyaan ini, kita perlu membuka response dari aktivitas STOR yang berhasil dilakukan yaitu pada paket ke 149. Sama seperti sebelumnya, kita perlu membuka section “Transmission Control Protocol” dan dapat kita temukan nilainya disana
+
+![1C](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/3e9d6839-1690-4644-9e3f-2610d59f4a4a)
+
+> D. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+Terakhir untuk mencari nilai “Acknowledgment number (raw)” dapat kita temukan 
+dibawah nilai pada soal sebelumnya untuk response dari aktivitas STOR.
+
+![1D](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92737767/a739f33a-eadb-4b90-8c05-dc2b12337ae4)
 
 ### Soal 2
 > Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
