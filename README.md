@@ -79,7 +79,7 @@ Dari situ kita dapat membentuk suatu kata dari pola yang telah ditemukan yaitu
 JDRNJA
 ```
 
-[SS masukkan ke NC]
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/ae9fece6-f243-4aba-912d-2cf47c2e4fbc)
 
 ### Soal 7
 > Berapa jumlah packet yang menuju IP 184.87.193.88?
@@ -90,11 +90,11 @@ Tetapi jika kita ingin mencari jumlah packet yang menuju suatu IP, kita harus me
 
 ![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/0106c219-8dc1-4f32-9d80-861e315becec)
 
-Didapatkan bahwa Jumlah Packet yang ada adalah ``7``
+Didapatkan bahwa Jumlah Packet yang ada adalah ``6``
 
 Selanjutnya kita tinggal memasukkan ke dalam ``Netcat``
 
-[SS NC]
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/2947185b-b7ff-4966-a28c-afe35185260a)
 
 ### Soal 8
 > Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
@@ -117,7 +117,7 @@ Sehingga kueri yang dihasilkan adalah
 ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 ```
 
-[SS]
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/f8fff2a4-8fb6-43f1-b31f-0d7657db82b5)
 
 ### Soal 10
 > Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
