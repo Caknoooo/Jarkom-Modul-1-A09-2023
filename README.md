@@ -88,11 +88,46 @@ Pada soal ini, kita perlu mencari paket yang didapatkan ke-130, lalu pada bagian
 ### Soal 5
 > Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
 
-A. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+Karena perintah soal adalah melakukan CAPTURE PACKET yang berhubungan dengan pengiriman suatu paket atau bisa dibilang dengan pengiriman suatu data. Kita bisa
+menggunakan SMTP untuk Capture Filter nya. Ketika sudah mendapatkan hasil Capture nya kita cari yang berhubungan dengan Password karena kita akan membuka File yang secret
 
-B. Port berapakah pada server yang digunakan untuk service SMTP?
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/e37fb90c-cd5b-4507-9417-4ae63dc2b8ac)
 
-C. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+Lalu kita membuka browser base64Decode untuk mendecode password tersebut lalu didapatkan
+
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/bfeaa39f-e7ba-4b8a-9b06-a4eea4c5f97b)
+
+Lalu kita masukkan ke dalam file secret yang ada password di dalamnya dan didapatkan ``netcat``
+
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/5c86f9b6-a4dc-4a2b-987c-aab694163ecd)
+
+Setelah itu, kita membuka ``Netcat`` tersebut dan didapatkan pertanyaan sebagai berikut:
+
+> A. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+
+Karena kita hanya mencari banyak packet, maka kita tinggal melakukan pengecekan terhadap nilai maksimal dari packet tersebut sebagai berikut: 
+
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/e6912aa4-ad38-4e06-a0a2-6222db5aca9d)
+
+Didapatkan banyak packet adalah 60
+
+> B. Port berapakah pada server yang digunakan untuk service SMTP?
+
+Lalu untuk mendapatkan Port yang digunakan oleh server, kita tinggal melakukan ``capture filter`` terhadap smtp lalu kita tekan salah satu packet yang ada dan didapatkan bahwa port dari SMTP adalah ``25``
+
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/7cc27125-06bc-4b5b-8d76-362d91a59d57)
+
+> C. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+
+Untuk mendapatkan alamat public IP, kita hanya perlu untuk melakukan pengecekan terhadap ``SOURCE`` dan ``DESTIONATION`` terhadap beberapa interaksi antara client dan server sebagai berikut 
+
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/b8ef93c9-a368-4bd2-8560-f85c1432cf91)
+
+``74.53.140.153`` merupakan alamat public IP
+
+Jika kita sudah mendapatkan seluruh hasil yang ada kita tinggal memasukkannya ke dalam ``Netcat``
+
+![image](https://github.com/Caknoooo/Jarkom-Modul-1-A09-2023/assets/92671053/0a1b8fc4-c033-47db-bb73-355c0f1dd04c)
 
 ### Soal 6
 > Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan **"server SOURCE ADDRESS 7812 is invalid"**. ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
